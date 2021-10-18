@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+	<student>
+		<id>1</id>
+		<name>Rahul</name>
+		<marks>75</marks>
+	</student>
+	<student>
+		<id>2</id>
+		<name>Ramesh</name>
+		<marks>80</marks>
+	</student>
+	<student>
+		<id>3</id>
+		<name>Sagar</name>
+		<marks>72</marks>
+	</student>
+</students>
