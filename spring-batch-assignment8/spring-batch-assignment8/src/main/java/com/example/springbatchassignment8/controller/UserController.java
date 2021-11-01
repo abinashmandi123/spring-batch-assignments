@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.springbatchassignment8.Exception.UserNotFoundException;
 import com.example.springbatchassignment8.model.User;
 import com.example.springbatchassignment8.repository.UserRepository;
 
@@ -26,6 +27,7 @@ public class UserController {
 
 	@GetMapping("/get/{id}")
 	public  Optional<User> getValue(@PathVariable Integer id) {
+		if(userRepository.existsById(id)==false) throw new UserNotFoundException();
 		return userRepository.findById(id);
 	}
 	
