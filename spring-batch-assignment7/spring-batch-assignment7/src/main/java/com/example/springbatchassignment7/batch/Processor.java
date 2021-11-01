@@ -14,10 +14,16 @@ public class Processor implements ItemProcessor<Student,Student>{
 	@Override
 	public Student process(Student item) throws Exception {
 		
-		
-		if(map.containsKey(item.getId())) {
-			return null;
+		try {
+			if(map.containsKey(item.getId())) {
+				return null;
+			}
 		}
+			catch(NullPointerException e) {
+				System.out.println(e);
+			}
+		
+		
 			map.put(item.getId(), item);
 		
 		return item;
