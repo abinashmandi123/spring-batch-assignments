@@ -6,4 +6,6 @@ I have done unit testing for spring-batch-assignment2.I have done unit testing f
 
 I have created docker image for spring-batch-assignment1.
 error-Failed to initialize the reader the reason for this error is that inside the docker container the reader is not able to read the file.
-solution-i copied the file from my local directory to the docker directory using docker cp command.so now the reader is able to access the file inside the container.
+solution-i copied the file from my local directory to the docker directory using docker cp command.so now the reader is able to access the file inside the container
+
+SOAPExample and SOAPExampleCLient are the two directories which are part of assignment 9.Assignment 9 is to create a soap service with crud operations.
